@@ -30,7 +30,12 @@ e.g.
 
 where 932 is the duration of the satellite pass, meteor_20170831_1632 is the filename
 prefix for the soft symbol file, and 0.012 is the loop bandwidth of the Costas Loop in the
-flowgraph.
+flowgraph. Once the flowgraph is running, I start the doppler.py script by running:
+
+     doppler.py
+
+The [doppler.py](https://github.com/rxcomm/dopplerscript/blob/master/doppler.py)
+script will automatically close when the flowgraph is terminated.
 
 You should also be sure to change your location data and the pointer to the satellite
 TLE data in the doppler.py file.
